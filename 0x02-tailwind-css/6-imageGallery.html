@@ -1,0 +1,41 @@
+<section class="image-gallery">
+  <h2>Image Gallery</h2>
+  <div class="gallery-grid">
+    <img src="images/image1.jpg" alt="Image 1">
+    <img src="images/image2.jpg" alt="Image 2">
+    <img src="images/image3.jpg" alt="Image 3">
+    <img src="images/image4.jpg" alt="Image 4">
+    <img src="images/image5.jpg" alt="Image 5">
+    <img src="images/image6.jpg" alt="Image 6">
+  </div>
+</section>
+<style>
+.image-gallery {
+  padding: 2rem;
+  background-color: #f9f9f9;
+}
+
+.image-gallery h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
