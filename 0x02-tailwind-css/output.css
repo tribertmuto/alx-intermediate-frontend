@@ -1,0 +1,10 @@
+/* This is just a sample, actual file will be much larger */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Compiled output will look like: */
+*, ::before, ::after { box-sizing: border-box; }
+.bg-blue-500 { background-color: #3b82f6; }
+.text-center { text-align: center; }
+/* ...thousands of utility classes... */
